@@ -1,0 +1,40 @@
+/* GENERAL */
+* {
+  box-sizing: border-box; }
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+body {
+  display: flex; }
+
+.sidebar {
+  width: 200px;
+  flex: 1 1 200px;
+  background-color: #000000; }
+  @media (max-width: 767px) {
+    .sidebar {
+      max-width: 100%;
+      min-height: 80px;
+      flex: 1 1 100%; } }
+
+.content-wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column; }
+
+.topbar {
+  background-color: #ffffff;
+  height: 80px; }
+
+.main-wrapper {
+  overflow: auto;
+  align-self: stretch;
+  justify-self: stretch;
+  background-color: #fafafa; }
+
+/*# sourceMappingURL=style.css.map */

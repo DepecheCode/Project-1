@@ -1,0 +1,26 @@
+.panel-header {
+    border-bottom: 1px solid $color11;
+    text-align: left;
+}
+
+.icon-size {
+    width: 20px;
+    height: 20px;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.flexible {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: $color7;
+}

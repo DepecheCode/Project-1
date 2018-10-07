@@ -13,9 +13,10 @@ body {
   display: flex; }
 
 .sidebar {
-  width: 200px;
-  flex: 1 1 200px;
-  background-color: #000000; }
+  max-width: 300px;
+  flex: 1 1 auto;
+  background-color: #dddddd;
+  flex-wrap: nowrap; }
   @media (max-width: 767px) {
     .sidebar {
       max-width: 100%;

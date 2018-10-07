@@ -4,61 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Project1</title>
 </head>
 <body>
     <div class="sidebar">
+        <div class="sidebar-header">
         <h1>Just do it!</h1>
-        <i class="fas fa-bars"></i>
-        <div>
-            <i class="far fa-star"></i>
+        <i class="fas fa-align-justify"></i>
+        </div>
+        <ul class="sidebar-list">
+        <li>
+            <img src="icons/general.svg" alt="icon-1">
             <p>General</p>
-        </div>
-        <div>
-            <i class="fas fa-list"></i>
+        </li>
+        <li>
+            <img src="icons/details.svg" alt="icon-2">
             <p>Details</p>
-        </div>
-        <div>
-            <i class="fas fa-link"></i>
+        </li>
+        <li>
+            <img src="icons/links.svg" alt="icon-3">
             <p>Links</p>
-        </div>
-        <div>
-            <i class="fas fa-money-check"></i>
+        </li>
+        <li>
+            <img src="icons/banners.svg" alt="icon-4">
             <p>Banners</p>
-        </div>
-        <div>
-            <i class="fas fa-user"></i>
+        </li>
+        <li>
+            <img src="icons/personaldata.svg" alt="icon-5">
             <p>Personal data</p>
-        </div>
-        <div>
-            <i class="fas fa-hand-holding-usd"></i>
+        </li>
+        <li>
+            <img src="icons/payout.svg" alt="icon-6">
             <p>Payout</p>
-        </div>
-        <div>
-            <i class="fas fa-angle-double-left"></i>
+        </li>
+        <li>
+            <img src="icons/postback.svg" alt="icon-7">
             <p>Postback</p>
-        </div>
-        <div>
-            <p>YOUR MANAGER</p>
+        </li>
+        </ul>
+        <div class="manager">
+            <h2>YOUR MANAGER</h2>
+            <div class="person">
             <img src="http://www.prona.net/Root/Contacts/3/14-04-2015/220X220466139_uku.jpg" alt="man">
-            <p>Mikhael E.</p>
+            <div class="green-circle"></div>
+            <h3>Mikhael E.</h3>
+            </div>
         </div>
     </div>
     <div class="content-wrapper">
-        <div class="topbar"></div>
+        <div class="topbar">
+            <div class="topbar-menu">
+                <img src="icons/wallet.svg">
+                <h3>$1,500.00</h3>
+                <img src="icons/arrow-down.svg">
+            </div>
+            <div class="topbar-menu">
+                <img src="icons/notification.svg">
+                <div class="orange-circle"></div>
+            </div>
+            <div class="topbar-menu">
+                <img src="icons/profile.svg">
+                <p>Leonardo Dicaprio</p>
+            </div>
+            <div class="topbar-menu">
+                <img src="icons/quit.svg">
+            </div>
+        </div>
         <div class="main-wrapper">
-            <div class="panel"></div>
-            <div class="panel"></div>
-            <div class="panel"></div>
-            <div class="panel"></div>
+            <div class="panel">
+                <div class="panel-header">
+                <p>GENERAL STATISTIC</p>
+                </div>
+                <div>
+                    <form class="main-form">
+                        <div class="form-style">
+                        <input type="date" value="16.05.2016">
+                        <input type="date" placeholder="16.05.2016">
+                        <img class="calendar" src="icons/calendar.svg">
+                        <button class="btn-orange">
+                            <img src="icons/refresh.svg">
+                        </button>
+                        </div>
+                    </form> 
+                </div>
+                <div class="numbers">
+                    <div class="numbers-row">
+                        <div class="numbers-text">
+                            <p>Visit signups</p>
+                            <p><b>235</b></p>
+                        </div>
+                        <div class=" numbers-text">
+                            <p>Net deposit</p>
+                            <p><b>564</b></p>
+                        </div>
+                    </div>
+                    <div class="numbers-row">
+                        <div class="numbers-text">
+                            <p>FTD</p>
+                            <p><b>445</b></p>
+                        </div>
+                        <div class="numbers-text">
+                            <p>Turn over</p>
+                            <p><b>432</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph">
+                    <img src="images/wykres.png">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-header">
+                    <p>LINKS</p>
+                </div>
+                <div>
+                    <button class="btn-orange">+add new</button>
+                    <div class="list-link">
+                        <div class="link row">
+                            <div class="col-5">
+                                <p>Home page</p>
+                            </div>
+                            <div class="col-5">
+                                <a href="">http://www.homepage.com</a>
+                            </div>
+                            <div class="col-2">
+                                <img class="hover-only" src="icons/links.svg">
+                                <img class="hover-only" src="icons/trash.svg">
+                            </div>
+                        </div>
+                        <div class="link row">
+                            <div class="col-5">
+                                <p>Currently offer</p>
+                            </div>
+                            <div class="col-5">
+                                <a href="">http://www.currently.com</a>
+                            </div>
+                            <div class="col-2">
+                                <img class="hover-only" src="icons/links.svg">
+                                <img class="hover-only" src="icons/trash.svg">
+                            </div>
+                        </div>
+                        <div class="link row">
+                            <div class="col-5">
+                                <p>Blurpix</p>
+                            </div>
+                            <div class="col-5">
+                                <a href="">http://www.blurpix.com</a>
+                            </div>
+                            <div class="col-2">
+                                <img class="hover-only" src="icons/links.svg">
+                                <img class="hover-only" src="icons/trash.svg">
+                            </div>
+                        </div>
+                        <div class="link row">
+                            <div class="col-5">
+                                <p>Your Site</p>
+                            </div>
+                            <div class="col-5">
+                                <a href="">http://www.yoursite.com</a>
+                            </div>
+                            <div class="col-2">
+                                <img class="hover-only" src="icons/links.svg">
+                                <img class="hover-only" src="icons/trash.svg">
+                            </div>
+                        </div>
+                        <div class="link row">
+                            <div class="col-5">
+                                <p>Google</p>
+                            </div>
+                            <div class="col-5">
+                                <a href="">http://www.google.com</a>
+                            </div>
+                            <div class="col-2">
+                                <img class="hover-only" src="icons/links.svg">
+                                <img class="hover-only" src="icons/trash.svg">
+                            </div>
+                        </div>
+                        <div class="link row">
+                            <div class="col-5">
+                                <p>Facebook</p>
+                            </div>
+                            <div class="col-5">
+                                <a href="">http://www.facebook.com</a>
+                            </div>
+                            <div class="col-2">
+                                <img class="hover-only" src="icons/links.svg">
+                                <img class="hover-only" src="icons/trash.svg">
+                            </div>
+                        </div>
+                        <div class="link row">
+                            <div class="col-5">
+                                <p>Dashboard</p>
+                            </div>
+                            <div class="col-5">
+                                <a href="">http://www.dashboard.com</a>
+                            </div>
+                            <div class="col-2">
+                                <img class="hover-only" src="icons/links.svg">
+                                <img class="hover-only" src="icons/trash.svg">
+                            </div>
+                        </div>
+                        <div class="link row">
+                            <div class="col-5">
+                                <p>Blurax</p>
+                            </div>
+                            <div class="col-5">
+                                <a href="">http://www.blurax.com</a>
+                            </div>
+                            <div class="col-2">
+                                <img class="hover-only" src="icons/links.svg">
+                                <img class="hover-only" src="icons/trash.svg">
+                            </div>
+                        </div>
+                        <div class="link row">
+                            <div class="col-5">
+                                <p>Piece of Wine</p>
+                            </div>
+                            <div class="col-5">
+                                <a href="">http://www.pieceofwine.com</a>
+                            </div>
+                            <div class="col-2">
+                                <img class="hover-only" src="icons/links.svg">
+                                <img class="hover-only" src="icons/trash.svg">
+                            </div>
+                        </div>
+                        <div class="link row">
+                            <div class="col-5">
+                                <p>Twitter</p>
+                            </div>
+                            <div class="col-5">
+                                <a href="">http://www.twitter.com</a>
+                            </div>
+                            <div class="col-2">
+                                <img class="hover-only" src="icons/links.svg">
+                                <img class="hover-only" src="icons/trash.svg">
+                            </div>
+                        </div>  
+                    </div>
+                    <button class="btn-orange">+add new</button>
+                </div>
+            </div>
         </div>
     </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>    
 </body>
 </html>

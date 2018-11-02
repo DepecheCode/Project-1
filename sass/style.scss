@@ -8,7 +8,6 @@
 @import "variables";
 @import "mixins";
 @import "layout";
-@import "icons";
 
 
 * {
@@ -24,8 +23,13 @@ html {
     font-family: $font1;
 }
 
-body {
+body.page {
     display: flex;
+    background-color: $color6;
+
+    @media (max-width: $mobile-breakpoint) {
+        display: block;
+    }
 }
 
 .sidebar {
@@ -37,8 +41,12 @@ body {
     color: $color2;
 
     @media (max-width: $mobile-breakpoint) {
-        max-width: 100%;
-        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 100%;
+        overflow: auto;
     }
 
     .sidebar-header {
@@ -64,60 +72,80 @@ body {
         }
     }
 
-    .sidebar-list {
-        list-style-type: none;
-        padding: 0;
-
-        li {
-            @extend .flexible;
-            justify-content: flex-start;
-            padding: 0 15px;
-            border-left: 5px solid $color1;
+    .sidebar-content {
         
-                &:hover {
-                    background-color: $color13;
-                    border-left: 5px solid $color10;
-                }
-            
-            i {
-                @extend .icon-size;
-            }
+        @media (max-width: $mobile-breakpoint) {
+            display: none;
+        }
 
-            p {
-                padding-left: 15px;
+        .sidebar-list {
+            list-style-type: none;
+            padding: 0;
+            
+                li {
+                    @extend .flexible;
+                    justify-content: flex-start;
+                    padding: 0 15px;
+                    border-left: 5px solid $color1;
+
+                    a {
+                        text-decoration: none;
+                
+                
+                        &:hover {
+                            background-color: $color13;
+                            border-left: 5px solid $color10;
+                            color: $color10;
+                        }
+                    
+                        i {
+                            @extend .icon-size;
+                        }
+
+                        p {
+                            padding-left: 15px;
+                            font-size: 18px;
+                        }
+                    }
+                }
             }
         }
-    }
 
-    .manager {
-        border-top: 1px solid $color4;
-        font-size: 10px;
-        padding: 10px 25px;
+        .manager {
+            border-top: 1px solid $color4;
+            font-size: 10px;
+            padding: 10px 25px;
 
-        .person {
-            @extend .flexible;
-            justify-content: flex-start;
-            position: relative;
+            .person {
+                @extend .flexible;
+                justify-content: flex-start;
+                position: relative;
+                text-decoration: none;
 
-            img {
-                width: 70px;
-                height: 70px;
-                border-radius: 50%;
-            }
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
 
-            .green-circle {
-                @extend .circle;
-                width: 15px;
-                height: 15px;
-                background-color: $color5;
-                top: 0;
-                left: 55px;
-            }
+                .green-circle {
+                    @extend .circle;
+                    width: 15px;
+                    height: 15px;
+                    background-color: $color5;
+                    top: 0;
+                    left: 55px;
+                }
 
-            h3 {
-                margin-left: 15px;
-                font-size: 16px;
-                color: $color3;
+                h3 {
+                    margin-left: 15px;
+                    font-size: 16px;
+                    color: $color3;
+
+                    &:hover {
+                        color: $color10;
+                    }
+                }
             }
         }
     }
@@ -126,7 +154,6 @@ body {
         max-width: 100%;
         flex: 1 1 100%;
     }
-}
 
 .content-wrapper {
     display: flex;
@@ -142,9 +169,7 @@ body {
 
     .topbar {
         background-color: $color7;
-        height: 50px;
-        justify-content: flex-end;
-        @extend .flexible;
+        display: flex 1 0 auto;
     
         .topbar-menu {
             @extend .flexible;
@@ -162,13 +187,13 @@ body {
                     top: 15px;
                     left: 32px;
                     background-color: $color10;
-                    width: 8px;
-                    height: 8px;
+                    width: 10px;
+                    height: 10px;
                 }
-            
-                img {
-                    @extend .icon-size;
-                    filter: invert(50%);
+                
+                i {
+                    font-size: 28px;
+                    color: $color2;
                 }
 
                 h3 {
@@ -279,6 +304,15 @@ body {
 
                     a {
                         text-decoration: none;
+
+                        i {
+                            color: $color2;
+
+                            &:hover {
+                                color: $color10;
+                            }
+                        }
+                
                     }
 
                     &:hover {

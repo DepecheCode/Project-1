@@ -2,9 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    document.querySelector('.js--toggle-menu').addEventListener('click', function(event) {
+    document.querySelector('.fa-align-justify').addEventListener('click', function(event) {
         event.preventDefault();
 
-    document.querySelector('.sidebar').classList.toggle('open');
+    document.querySelector('.sidebar-content').classList.toggle('open');
     })
 })

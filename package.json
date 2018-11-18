@@ -8,6 +8,7 @@
     "watch": "npm-run-all build -p watch:*",
     "watch:browsersync": "browser-sync start --server --files css/*.css *.html",
     "watch:sassprefixer": "onchange scss/*.scss -- npm-run-all sassprefixer:*",
+    "watch:sass": "node-sass -w sass/style.scss > css/style.css",
     "build": "npm-run-all build:*",
     "build:clean": "rimraf css/",
     "build:sass": "node-sass --output-style compact -o sass/style.scss style.css",

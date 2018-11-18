@@ -8,6 +8,7 @@
 @import "variables";
 @import "mixins";
 @import "layout";
+@import "fonts";
 
 
 * {
@@ -80,31 +81,28 @@ body.page {
 
         .sidebar-list {
             list-style-type: none;
-            padding: 0;
+            text-decoration: none;
+            padding: 20px;
             
                 li {
-                    @extend .flexible;
-                    justify-content: flex-start;
-                    padding: 0 15px;
                     border-left: 5px solid $color1;
+                    text-decoration: none;
 
                     a {
                         text-decoration: none;
-                
-                
+
                         &:hover {
                             background-color: $color13;
                             border-left: 5px solid $color10;
                             color: $color10;
                         }
-                    
+
                         i {
-                            @extend .icon-size;
+                            text-decoration: none;
                         }
 
-                        p {
-                            padding-left: 15px;
-                            font-size: 18px;
+                        span {
+                            text-decoration: none;
                         }
                     }
                 }
@@ -123,7 +121,7 @@ body.page {
                 text-decoration: none;
 
                 img {
-                    width: 70px;
+                    // width: 70psax;
                     height: 70px;
                     border-radius: 50%;
                 }
@@ -138,7 +136,6 @@ body.page {
                 }
 
                 h3 {
-                    margin-left: 15px;
                     font-size: 16px;
                     color: $color3;
 

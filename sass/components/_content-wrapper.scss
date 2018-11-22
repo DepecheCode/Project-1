@@ -1,0 +1,13 @@
+.content-wrapper {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: $color6;
+
+    @media (max-width: $mobile-breakpoint) {
+        max-width: 100%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}

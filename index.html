@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Project1</title>
 </head>
-<body>
+<body class="page">
     <div class="sidebar">
         <div class="sidebar-header">
             <h1>Just do it!</h1>
@@ -61,47 +61,61 @@
             </ul>
             <div class="manager">
                 <h2>YOUR MANAGER</h2>
-                <div class="person">
-                    <a href="#"><img src="http://www.prona.net/Root/Contacts/3/14-04-2015/220X220466139_uku.jpg" alt="man"></a>
-                    <div class="green-circle"></div>
-                    <h3>Mikhael E.</h3>
-                </div>
+                <a href="#">
+                    <div class="person">
+                        <img src="http://www.prona.net/Root/Contacts/3/14-04-2015/220X220466139_uku.jpg" alt="man">
+                        <div class="green-circle"></div>
+                        <h3>Mikhael E.</h3>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
     <div class="content-wrapper">
         <div class="topbar">
-            <div class="topbar-menu">
-                <a href="#"><i class="icon-wallet"></i></a>
-                <h3>$1,500.00</h3>
-                <a href="#"><i class="icon-arrow-down"></i></a>
-            </div>
-            <div class="topbar-menu">
-                <a href="#"><i class="icon-notification"></i></a>
-                <div class="orange-circle"></div>
-            </div>
-            <div class="topbar-menu">
-                <a href="#"><i class="icon-login"></i></a>
-                <a href="#"><p>Leonardo Dicaprio</p></a>
-            </div>
-            <div class="topbar-menu">
-                <a href="#"><i class="icon-quit"></i></a>
-            </div>
+            <a href="#">
+                <div class="topbar-menu">
+                    <i class="icon-wallet"></i>
+                    <h3>$1,500.00</h3>
+                    <i class="icon-arrow-down"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="topbar-menu">
+                    <i class="icon-notification"></i>
+                    <div class="orange-circle"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="topbar-menu">
+                    <i class="icon-login"></i>
+                    <p>Leonardo Dicaprio</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="topbar-menu">
+                    <i class="icon-quit"></i>
+                </div>
+            </a>
         </div>
         <div class="main-wrapper">
             <div class="panel">
                 <div class="panel-header">
-                <p>GENERAL STATISTIC</p>
+                    <p>GENERAL STATISTIC</p>
                 </div>
                 <div>
                     <form class="main-form">
                         <div class="form-style">
-                        <input type="date" value="16.05.2016">
-                        <input type="date" placeholder="16.05.2016">
-                        <img class="calendar" src="icons/calendar.svg">
-                        <button class="btn-orange">
-                            <img src="icons/refresh.svg">
-                        </button>
+                            <div class="form-border">
+                                <input type="date" value="16.05.2016">
+                                <input type="date" placeholder="16.05.2016">
+                                <a href="#" class="calendar">
+                                    <i class="icon-calendar"></i>
+                                </a>
+                            </div>
+                            <a href="#" class="btn-refresh">
+                                <i class="icon-refresh"></i>
+                            </a>
                         </div>
                     </form> 
                 </div>
@@ -136,14 +150,18 @@
                     <p>LINKS</p>
                 </div>
                 <div>
-                    <button class="btn-orange">+add new</button>
+                    <a href="#" class="btn-orange">
+                        <div class="btn-orange">
+                            <span>+add new</span>
+                        </div>
+                    </a>
                     <div class="list-link">
                         <div class="link row">
                             <div class="col-5">
                                 <p>Home page</p>
                             </div>
                             <div class="col-5">
-                                <a href="#">http://www.homepage.com</a>
+                                <a href="#"><span>http://www.homepage.com</span></a>
                             </div>
                             <div class="col-2">
                                 <a href="#"><i class="hover-only icon-links"></i></a>
@@ -259,7 +277,11 @@
                             </div>
                         </div>  
                     </div>
-                    <button class="btn-orange">+add new</button>
+                    <a href="#" class="btn-orange">
+                        <div class="btn-orange">
+                            <span>+add new</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

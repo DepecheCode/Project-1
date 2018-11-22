@@ -11,7 +11,7 @@
     "watch:sass": "node-sass -w sass/style.scss > css/style.css",
     "build": "npm-run-all build:*",
     "build:clean": "rimraf css/",
-    "build:sass": "node-sass --output-style compact -o sass/style.scss style.css",
+    "build:sass": "node-sass --output-style compact -o sass/style.scss css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css"
   },

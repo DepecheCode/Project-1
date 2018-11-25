@@ -1,9 +1,10 @@
-'use scrict';
+'use strict';
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    document.querySelector('.fa-align-justify').addEventListener('click', function(event) {
+    document.querySelector('.js--toggle-menu').addEventListener('click', function(event) {
         event.preventDefault();
-        document.querySelector('.sidebar').classList.toggle('open'); 
+        document.querySelector('.sidebar-list').classList.toggle('open'); 
+        document.querySelector('body').classList.toggle('open');
     })
 });

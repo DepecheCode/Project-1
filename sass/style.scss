@@ -22,20 +22,30 @@ body,
 html {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
     font-family: $font1;
 }
 
 body.page {
-    display: flex;
-    flex: 1 0 auto;
-    flex-wrap: nowrap;
+    position: relative;
+    padding-left: 190px;
+    padding-top: 70px;
     background-color: $color9;
 
     @media (max-width: $mobile-breakpoint) {
-        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        padding-top: 50px;
+
+        &.open {
+            padding-top: 400px;
+        }
     }
+}
+
+img {
+    max-width: 100%;
 }
 
     

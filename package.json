@@ -8,10 +8,10 @@
     "watch": "npm-run-all build -p watch:*",
     "watch:browsersync": "browser-sync start --server --files css/*.css *.html",
     "watch:sassprefixer": "onchange scss/*.scss -- npm-run-all sassprefixer:*",
-    "watch:sass": "node-sass -w sass/style.scss > css/style.css",
+    "watch:sass": "node-sass -w sass/style.scss -o css",
     "build": "npm-run-all build:*",
     "build:clean": "rimraf css/",
-    "build:sass": "node-sass --output-style compact -o sass/style.scss css/style.css",
+    "build:sass": "node-sass --output-style compact -o css sass/style.scss",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css"
   },

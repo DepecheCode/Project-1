@@ -1,16 +1,13 @@
 .topbar {
     background-color: $color7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: $border;
+    height: 70px;
     display: flex;
     justify-content: flex-end;
-    flex: 1 0 auto;
-    border-bottom: $border;
-
-    @media (max-width: $mobile-breakpoint) {
-        width: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
     a {
         text-decoration: none;
@@ -18,8 +15,8 @@
         .topbar-menu {
             @extend .flexible;
             border-left: $border;
-            padding: 0 20px;
-            height: 50px;
+            padding: 0 10px;
+            height: 70px;
             position: relative;
 
                 @media (max-width: $mobile-breakpoint) {
@@ -32,11 +29,11 @@
 
                 .orange-circle {
                     @extend .circle;
-                    top: 8px;
-                    left: 37px;
+                    top: 22px;
+                    left: 29px;
                     background-color: $color10;
-                    width: 10px;
-                    height: 10px;
+                    width: 8px;
+                    height: 8px;
 
                     @media (max-width: $mobile-breakpoint) {
                         left: 50%;
@@ -44,19 +41,27 @@
                 }
                 
                 i {
-                    font-size: 28px;
+                    font-size: 16px;
                     color: $color2;
+                    padding: 0 10px;
                 }
 
                 h3 {
                     padding: 0 10px;
-                    color: $color3;
+                    color: $color11;
+                    font-size: 18px;
                 }
 
                 p {
                     padding: 0 10px;
                     color: $color3;
+                    font-size: 14px;
+                    font-weight: 400;
                 }
             }
         }
+
+    @media (max-width: $mobile-breakpoint) {
+        display: none;
     }
+}

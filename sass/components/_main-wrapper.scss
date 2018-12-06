@@ -67,16 +67,18 @@
 
                 @media (max-width: $mobile-breakpoint) {
                     margin: 0;
+                    width: 50%;
                 }
             
                 .numbers-text {
                     display: flex;
                     justify-content: space-between;
-                    margin: 0;
+                    margin: 0 20px;
                     border-bottom: $border;
 
                     @media (max-width: $mobile-breakpoint) {
                         flex-direction: column;
+                        margin-bottom: 15px;
                     }
 
                     p {
@@ -88,10 +90,10 @@
                         }
 
                         &:first-of-type {
-                            margin-right: 100px;
 
                             @media (max-width: $mobile-breakpoint) {
                                 margin: 0;
+                                margin-bottom: 5px;
                             }
                         }
                     }
@@ -106,6 +108,7 @@
         .graph {
             display: flex;
             justify-content: center;
+            margin: 20px;
         }
 
         .list-link {
